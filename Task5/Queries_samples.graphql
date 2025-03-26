@@ -1,0 +1,33 @@
+#полная информация о клиенте
+query {
+ client(clientId: "123456") {
+   id
+   name
+   age
+ }
+}
+
+#только имя
+query {
+ client(clientId: "123456") {
+   id
+   name
+ }
+}
+
+#документы клиента, только имя и тип документа
+query {
+ document(clientId: "123456") {
+   id
+   type
+   name
+ }
+}
+
+#родственники клиента, только имя
+query {
+ document(clientId: "123456") {
+   id
+   name
+ }
+}
